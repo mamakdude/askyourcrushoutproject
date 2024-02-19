@@ -1,0 +1,71 @@
+*{
+    background-color: pink;
+}
+.align-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+h1{
+  text-align: center;
+}
+
+
+#image{
+  display: flex;
+  object-fit: contain;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url(./Be\ My\ Glittertine.ttf);
+  }
+  
+  #cute-font{
+    font-family: myFirstFont;
+    font-size: 60px;
+    
+  }
+
+.button-container {
+   display: flex;
+   justify-content: center;
+}
+
+button {
+    padding: 10px 40px;
+    margin: 5px;
+    font-size: 10px;
+    cursor: pointer;
+    background-color: 	#c060a1;
+    border: 1;
+    border-radius: 10px;
+    transition: background-color 0.3s sssease;
+    color: azure;
+}
+button:hover {
+  background-color:	#883a97; /* softer pink */
+  transform: scale(1.2);
+}
+
+#no-button:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+@keyframes shake {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-5px, 0);
+  }
+  50% {
+    transform: translate(0, -5px);
+  }
+  75% {
+    transform: translate(5px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
