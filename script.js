@@ -25,9 +25,9 @@ noButton.addEventListener("mouseover", () => {
 
 yesButton.addEventListener("click",function(){
     title.textContent= "I love you sayang*";
+    title.style.fontSize='12vw';
     mainImage.src= "./assets/imges/loveyoubear.gif";
+    mainImage.style.width='90%'
     yesButton.style.display='none';
     noButton.style.display='none';
 })
-
-  
