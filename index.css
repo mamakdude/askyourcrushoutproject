@@ -1,71 +1,56 @@
 *{
-    background-color: pink;
+  background-color: pink;
 }
+
 .align-center{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%; /* Ensure images resize based on viewport */
+  height: auto; /* Ensure images resize proportionally */
 }
+
 h1{
   text-align: center;
 }
 
-
 #image{
-  display: flex;
-  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%; /* Ensure images resize based on viewport */
+  height: auto; /* Ensure images resize proportionally */
 }
+
 @font-face {
-    font-family: myFirstFont;
-    src: url(./Be\ My\ Glittertine.ttf);
-  }
-  
-  #cute-font{
-    font-family: myFirstFont;
-    font-size: 60px;
-    
-  }
+  font-family: myFirstFont;
+  src: url(./Be\ My\ Glittertine.ttf);
+}
+
+#cute-font{
+  font-family: myFirstFont;
+  font-size: 7vw; /* Responsive font size based on viewport width */
+}
 
 .button-container {
-   display: flex;
-   justify-content: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Add some spacing */
 }
 
 button {
-    padding: 10px 40px;
-    margin: 5px;
-    font-size: 10px;
-    cursor: pointer;
-    background-color: 	#c060a1;
-    border: 1;
-    border-radius: 10px;
-    transition: background-color 0.3s sssease;
-    color: azure;
+  padding: 8px 8vw;
+  margin: 5px;
+  font-size: 3vw; /* Responsive font size based on viewport width */
+  cursor: pointer;
+  background-color:  #c060a1;
+  border: 1;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  color: azure;
 }
+
 button:hover {
-  background-color:	#883a97; /* softer pink */
+  background-color:  #883a97; /* softer pink */
   transform: scale(1.2);
 }
 
-#no-button:hover {
-  animation: shake 0.5s;
-  animation-iteration-count: infinite;
-}
-@keyframes shake {
-  0% {
-    transform: translate(0, 0);
-  }
-  25% {
-    transform: translate(-5px, 0);
-  }
-  50% {
-    transform: translate(0, -5px);
-  }
-  75% {
-    transform: translate(5px, 0);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
